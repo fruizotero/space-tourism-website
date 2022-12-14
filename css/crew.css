@@ -86,7 +86,7 @@ video {
 
 .crew__heading {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 0.15rem;
     text-transform: uppercase;
     text-align: center;
@@ -192,12 +192,12 @@ video {
         ;
         
         padding: 0;
-        padding-top: 2rem;
+        padding-top: 2.5rem;
     }
 
     .crew__heading {
         padding-left: 5%;
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
         text-align: left;
     }
 
@@ -252,12 +252,14 @@ video {
         ;
         row-gap: 0;
         column-gap: 2rem;
-        padding: 0 8%;
-        padding-top: 2rem;
+        padding: 2.5rem 10%;
+        padding-left: calc(2.5rem + 5%);
+        padding-bottom: 0;
     }
 
     .crew__heading {
         padding: 0;
+        font-size: 1.25rem;
     }
 
     .crew__info {

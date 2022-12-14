@@ -269,6 +269,7 @@ video {
         align-items: center;
         gap: 5rem;
         padding: 2.5rem 10%;
+        padding-left: calc(2.5rem + 5%);
         padding-bottom: 0;
     }
 

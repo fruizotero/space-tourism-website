@@ -58,7 +58,7 @@ video {
 
 .heading {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 0.15rem;
     text-transform: uppercase;
     text-align: center;
@@ -149,7 +149,7 @@ video {
     }
 
     .tech{
-        padding-top: 2rem;
+        padding-top: 2.5rem;
         padding-bottom: 3rem;
     }
 
@@ -174,10 +174,12 @@ video {
     }
 
     .tech{
-        padding-left: 10%;
+        padding: 2.5rem 0;
+        padding-left: calc(2.5rem + 5%);
     }
 
     .heading{
+        font-size: 1.25rem;
         padding: 0;
     }
 
