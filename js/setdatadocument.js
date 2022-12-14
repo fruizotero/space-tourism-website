@@ -56,3 +56,20 @@ export const setDataCrew = (el, fnt = () => { }) => {
     d.querySelector(".crew__info__description").animate(animationText, 500);
 
 }
+
+export const setDataTech = (data, fnt = () => { }) => { 
+
+
+    d.querySelector(".tech__src").setAttribute("srcset", `.${data["images"].portrait}`);
+    d.querySelector(".tech__image").setAttribute("src", `.${data["images"].landscape}`);
+    d.querySelector(".tech__title-main").textContent = data["name"];
+    d.querySelector(".tech__description").textContent = data["description"];
+   
+    fnt();
+
+    d.querySelector(".tech__image").animate(animationImage, 500);
+    d.querySelector(".tech__title-main").animate(animationText, 500);
+    d.querySelector(".tech__description").animate(animationText, 500);
+
+
+}

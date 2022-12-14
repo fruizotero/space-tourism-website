@@ -43,9 +43,102 @@ video {
 
 
 .body {
+    color: var(--color-2);
     background-image: url("../assets/technology/background-technology-mobile.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+}
+
+.tech {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.heading {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-3);
+}
+
+.heading__number {
+    color: var(--color-2);
+}
+
+.tech__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tech__left {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 5%;
+}
+
+.slider__circles {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.slider__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    font-family: 'Bellefair', serif;
+    font-size: 1.25rem;
+    color: var(--color-3);
+    background-color: var(--color-1);
+    border: none;
+    border: 1px solid var(--color-2);
+    border-radius: 50%;
+}
+
+.slider__circle--active {
+    color: var(--color-1);
+    background-color: var(--color-3);
+}
+
+.tech__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.tech__title{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tech__title-heading {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.tech__title-main {
+    font-family: 'Bellefair', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    margin-block: 0;
+}
+
+.tech__description{
+    line-height: 2rem;
 }
 
 
@@ -55,10 +148,97 @@ video {
         background-size: 100% 100%;
     }
 
+    .tech{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .heading{
+        padding-left: 5%;
+        text-align: left;
+    }
+
+    .tech__left{
+        padding: 0 20%;
+    }
+
+    .tech__title{
+        gap: 1rem;
+    }
+
 }
 
 @media screen and (min-width:52em) {
     .body {
         background-image: url("../assets/technology/background-technology-desktop.jpg");
     }
+
+    .tech{
+        padding-left: 10%;
+    }
+
+    .heading{
+        padding: 0;
+    }
+
+    .tech__content{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tech__left{
+        flex-direction: row;
+        gap: 4rem;
+        order: 0;
+        padding: 0;
+    }
+
+    .slider__circles{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .slider__circle{
+        height: 4rem;
+        width: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .slider__circle:hover{
+        cursor: pointer;
+        border: 1px solid var(--color-3);
+    }
+
+    .tech__info{
+        gap: 1rem;
+        max-width: 30rem;
+        text-align: left;
+    }
+
+    .tech__title-heading{
+        font-size: 0.85rem;
+    }
+
+    .tech__title-main{
+        font-size: 3rem;
+    }
+
+    .tech__description{
+        line-height: 1.75rem;
+        max-width: 80%;
+        font-size: 0.9rem;
+
+    }
+
+    .tech__right{
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .tech__image{
+        height: 100%;
+        object-fit: fill;
+    }
+
 }
