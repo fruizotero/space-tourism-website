@@ -12,7 +12,7 @@ let index;
 
 d.addEventListener("DOMContentLoaded", async e => {
 
-    await getHeader();
+    await getHeader("../pages/templates/header.html");
     data = await getData();
     tech = data["technology"];
     console.log(tech);

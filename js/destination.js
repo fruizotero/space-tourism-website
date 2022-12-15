@@ -11,7 +11,7 @@ let destination;
 
 d.addEventListener("DOMContentLoaded", async e => {
 
-    await getHeader();
+    await getHeader("../pages/templates/header.html");
     data = await getData();
 
     destination = filterData(data["destinations"], "moon", "name");
