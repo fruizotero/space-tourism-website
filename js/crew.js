@@ -11,7 +11,7 @@ let crew = [];
 
 d.addEventListener("DOMContentLoaded", async e => {
 
-    await getHeader();
+    await getHeader("../pages/templates/header.html");
     data = await getData();
     crew = data["crew"];
     // sliderCircles(".slider__circles", crew.length);

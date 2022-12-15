@@ -6,7 +6,7 @@ const d = document;
 
 d.addEventListener("DOMContentLoaded", async e => {
 
-    await getHeader();
+    // await getHeader();
     menuActions();
     markTab();
 
